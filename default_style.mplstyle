@@ -1,0 +1,27 @@
+# Tick and label customisation
+xtick.direction:        "in"
+xtick.labelsize:        "x-large"
+xtick.major.width:      1.5
+xtick.minor.width:      1.5
+xtick.minor.visible:    "True"
+xtick.top: "True"
+
+ytick.direction:        "in"
+ytick.labelsize:        "x-large"
+ytick.major.width:      1.5
+ytick.minor.width:      1.5
+ytick.minor.visible:    "True"
+ytick.right:            "True"
+
+axes.labelsize:         "x-large"
+axes.linewidth:         1.5
+axes.titlesize:         "x-large"
+
+
+# Grid and legend customisation
+axes.grid:      "False"
+legend.frameon: "False"
+
+
+# Figure customisation
+figure.autolayout: True
