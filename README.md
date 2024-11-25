@@ -1,6 +1,10 @@
 # Matplotlib plotting styles
+
 A repository for my preferred matplotlib stylesheet (custom), to homogenise 
-Python plotting routines. As an example: The standard matplotlib plotting 
+Python plotting routines.
+
+## General plots
+The standard matplotlib plotting 
 style setup produces a plot looking like this
 
 ![standard](plots/plotting_example_default.png)
@@ -20,3 +24,21 @@ plt.style.use("https://raw.githubusercontent.com/simon-ast/matplotlib-plot-style
 
 The link within `plt.style.use` is for the raw `*.mplstyle` file from 
 within this repository.
+
+## Corner plots
+Very similar to the style above, but with easier adjustments for future use. 
+
+![default](plots/plotting_example_corner_default.png)
+
+![my_default](plots/plotting_example_corner_my_default.png)
+
+```
+plt.style.use("https://raw.githubusercontent.com/simon-ast/matplotlib-plot-style/main/corner_style.mplstyle")
+```
+
+The top tick marks in the marginalised posterior plots can removed by setting
+
+```
+corner_figure.axes[rel_idx].tick_params(which="both", top=False)
+```
+where `rel_idx` points to the subplots in the main diagonal.
